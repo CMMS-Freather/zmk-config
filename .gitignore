@@ -1,0 +1,7 @@
+/.cache/
+/.vscode/
+/.west/
+/build/
+/modules/
+/zephyr/
+/zmk/

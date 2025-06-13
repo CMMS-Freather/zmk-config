@@ -1,0 +1,31 @@
+# Copyright (c) 2022 Kan-Ru Chen
+# SPDX-License-Identifier: MIT
+
+description: HHKB Pro2 keyboard controller
+
+compatible: "zmk,kscan-hhkb-pro2"
+
+include: kscan.yaml
+
+properties:
+  gpios:
+    type: phandle-array
+    required: true
+  matrix-warm-up-ms:
+    type: int
+    default: 5
+  matrix-relax-us:
+    type: int
+    default: 6
+  adc-read-settle-us:
+    type: int
+    default: 5
+  active-polling-interval-ms:
+    type: int
+    default: 3
+  idle-polling-interval-ms:
+    type: int
+    default: 35
+  sleep-polling-interval-ms:
+    type: int
+    default: 3000
